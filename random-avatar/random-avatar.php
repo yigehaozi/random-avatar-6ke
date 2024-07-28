@@ -296,9 +296,9 @@ function random_avatar_check_authorization() {
             } else {
                 echo '<div class="error"><p>' . esc_html__( '无法验证卡密。', 'random-avatar' ) . '</p></div>';
             }
-        }else
+        }
 
-        wp_die( __( '随机头像插件未被授权。', 'random-avatar' ) );
+        // wp_die( __( '随机头像插件未被授权。', 'random-avatar' ) );
     }
 }
 add_action( 'admin_init', 'random_avatar_check_authorization' );
